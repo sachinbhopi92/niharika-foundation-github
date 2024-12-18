@@ -32,4 +32,4 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           local-dir: ./dist/
           server-dir: public_html/
-          strip_components: 1
+          strip_components: -1
