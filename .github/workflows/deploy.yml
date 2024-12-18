@@ -13,6 +13,11 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Set Up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Update to Node.js v20
+
       - name: Install Dependencies and Build
         run: |
           yarn install --frozen-lockfile
