@@ -1,0 +1,39 @@
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches:
+      - main # Trigger workflow on push to 'main' branch
+
+jobs:
+  deploy:
+    name: Deploy Website
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout code
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Set up Node.js (if needed)
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # Install dependencies and build project
+      - name: Install and Build
+        run: |
+          yarn install
+          yarn build
+
+      # Deploy to Hostinger via SSH
+      - name: Deploy to Hostinger
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.HOSTINGER_SERVER_IP }}
+          username: ${{ secrets.HOSTINGER_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "./build/" # Directory to upload (your build folder)
+          target: "/home/${{ secrets.HOSTINGER_USERNAME }}/public_html" # Hostinger target directory
+          strip_components: 1 # Remove leading build/ path
