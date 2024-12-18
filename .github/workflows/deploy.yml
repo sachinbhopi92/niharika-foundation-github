@@ -1,39 +1,29 @@
-name: Deploy to Hostinger
+name: Deploy to Hostinger via FTP
 
 on:
   push:
     branches:
-      - main # Trigger workflow on push to 'main' branch
+      - main
 
 jobs:
   deploy:
-    name: Deploy Website
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout code
-      - name: Checkout Repository
+      - name: Checkout Code
         uses: actions/checkout@v4
 
-      # Set up Node.js (if needed)
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      # Install dependencies and build project
-      - name: Install and Build
+      - name: Install Dependencies and Build
         run: |
-          yarn install
+          yarn install --frozen-lockfile
           yarn build
 
-      # Deploy to Hostinger via SSH
-      - name: Deploy to Hostinger
-        uses: appleboy/scp-action@v0.1.4
+      - name: Deploy to Hostinger via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
-          host: ${{ secrets.HOSTINGER_SERVER_IP }}
-          username: ${{ secrets.HOSTINGER_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "./build/" # Directory to upload (your build folder)
-          target: "/home/${{ secrets.HOSTINGER_USERNAME }}/public_html" # Hostinger target directory
-          strip_components: 1 # Remove leading build/ path
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT }}
+          local-dir: ./build/
+          server-dir: /public_html/
