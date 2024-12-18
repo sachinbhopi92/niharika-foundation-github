@@ -78,7 +78,7 @@ import ganeshSir from './teachers/Ganesh sir.jpeg';
 import avinashSir from './teachers/avinash-sir.jpeg';
 import maheshSir from './teachers/mahesh-sir.jpeg';
 import santoshSir from './teachers/santosh-sir.jpeg';
-import ganeshriMam from './teachers/ganeshri-mam.jpeg';
+import ganeshriMam from './teachers/Ganeshri-mam.jpeg';
 import shraddhaMam from './teachers/shrarddha-mam.jpeg';
 import ranjanaMam from './teachers/ranjana-mam.jpeg';
 import sanikaMam from './teachers/sanika-mam.jpeg';
