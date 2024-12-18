@@ -16,7 +16,7 @@ jobs:
       - name: Set Up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Update to Node.js v20
+          node-version: "20" # Update to Node.js v20
 
       - name: Install Dependencies and Build
         run: |
@@ -30,5 +30,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }}
-          local-dir: ./dist/
-          server-dir: /public_html/
+          local-dir: "./dist/*"
+          server-dir: "/public_html"
+          strip_components: 1
