@@ -74,7 +74,7 @@ import award8 from './awards and recognition/award8.jpg';
 
 // teachers images
 
-import ganeshSir from './teachers/ganesh-sir.jpeg';
+import ganeshSir from './teachers/ganesh-sir.png';
 import avinashSir from './teachers/avinash-sir.jpeg';
 import maheshSir from './teachers/mahesh-sir.jpeg';
 import santoshSir from './teachers/santosh-sir.jpeg';
