@@ -6,7 +6,7 @@ import collegeImage from './website-bg/college.jpg';
 import electricianImage from './courses/electrician.jpg';
 import acMechanicalImage from './courses/ac mechanical.png';
 import refrigeratorImage from './courses/refrigerator.jpg';
-import fitterImage from './courses/fiter.jpeg';
+import fitterImage from './courses/fitter.jpg';
 import welderImage from './courses/welder.jpg';
 import twoWheelerImage from './courses/two wheeler mechanical.jpeg';
 import plumberImage from './courses/plumber.jpg';
@@ -74,7 +74,7 @@ import award8 from './awards and recognition/award8.jpg';
 
 // teachers images
 
-import ganeshSir from './teachers/ganesh-sir.png';
+import ganeshSir from './teachers/ganesh-sir.jpeg';
 import avinashSir from './teachers/avinash-sir.jpeg';
 import maheshSir from './teachers/mahesh-sir.jpeg';
 import santoshSir from './teachers/santosh-sir.jpeg';
@@ -83,7 +83,7 @@ import shraddhaMam from './teachers/shrarddha-mam.jpeg';
 import ranjanaMam from './teachers/ranjana-mam.jpeg';
 import sanikaMam from './teachers/sanika-mam.jpeg';
 import balaramSir from './teachers/balaram-sir.jpeg';
-import rushiSir from './teachers/rushi sir.jpeg';
+import rushiSir from './teachers/rushi-sir.jpeg';
 import sanjaySir from './teachers/sanjay-sir.jpeg';
 import samirSir from './teachers/samir-sir.jpeg';
 import sachinSir from './teachers/sachin-sir.jpg';
