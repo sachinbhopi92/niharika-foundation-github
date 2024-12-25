@@ -44,35 +44,35 @@ const Courses: React.FC = () => {
       title: "Welder",
       description: "Comprehensive training in welding techniques and equipment operation for skilled welding careers.",
       imageSrc: [welderImage],
-      duration: "6 Months / 1 Year",
+      duration: "1 Year",
       students: 30
     },
     {
       title: "Plumber",
       description: "Comprehensive training in plumbing techniques, including pipe installation, repair, and maintenance.",
       imageSrc: [plumberImage],
-      duration: "6 Months",
+      duration: "1 Year",
       students: 30
     },
     {
       title: "Mechanical Motor Vehicle",
       description: "Comprehensive training in moto mechanic techniques, including installation, repair, and maintenance.",
       imageSrc: [twoWheelerImage],
-      duration: "6 Months",
+      duration: "1 Year",
       students: 30
     },
     {
       title: "Beautician",
       description: "Training in beauty treatments, skincare, makeup, and salon management.",
       imageSrc: [beauticianImage],
-      duration: "2 Months",
+      duration: "6 Months",
       students: 30
     },
     {
       title: "Fashion Designing & Tailoring",
       description: "Learn fashion design, garment construction, and tailoring skills to enter the fashion industry.",
       imageSrc: [fashionDesignImage],
-      duration: "2 Months",
+      duration: "6 Months",
       students: 30
     },
     {
