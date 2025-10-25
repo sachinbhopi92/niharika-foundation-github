@@ -1,6 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";  // Import Link component
+import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FOOTER_LINKS } from "../constants/navigation";
+import { CONTACT_INFO } from "../constants/contact";
 
 const Footer: React.FC = () => {
   return (
@@ -26,13 +28,13 @@ const Footer: React.FC = () => {
             Information Links
           </h3>
           <ul className="flex flex-row gap-10">
-            {["Courses", "Programs", "Awards", "Placement"].map((link) => (
-              <li key={link}>
+            {FOOTER_LINKS.map((link) => (
+              <li key={link.label}>
                 <Link
-                  to={`/${link.toLowerCase()}`}  // Using Link instead of <a>
+                  to={link.path}
                   className="hover:text-yellow-400 transition duration-300"
                 >
-                  {link}
+                  {link.label}
                 </Link>
               </li>
             ))}
@@ -48,31 +50,35 @@ const Footer: React.FC = () => {
             {/* Contact Details */}
             <ul className="text-gray-300 space-y-2">
               <li>
-                <span className="font-medium text-yellow-400">Mobile: &nbsp; &nbsp; </span>
-                +91 9767013076 / +91 8421399076
+                <span className="font-medium text-yellow-400">
+                  Mobile: &nbsp; &nbsp;{" "}
+                </span>
+                {CONTACT_INFO.phones.join(" / ")}
               </li>
               <li>
-                <span className="font-medium text-yellow-400">Email:&nbsp; &nbsp;</span>
-                <a
-                  href="mailto:niharikafoundation2@gmail.com"
-                  className="hover:text-yellow-400"
-                >
-                  niharikafoundation2@gmail.com &nbsp; / &nbsp;
-                </a>
-                <a
-                  href="mailto:ganeshbhopisir@careerttiniharikafoundation.com"
-                  className="hover:text-yellow-400"
-                >
-                  ganeshbhopisir@careerttiniharikafoundation.com
-                </a>
+                <span className="font-medium text-yellow-400">
+                  Email:&nbsp; &nbsp;
+                </span>
+                {CONTACT_INFO.emails.map((email, index) => (
+                  <span key={email}>
+                    <a
+                      href={`mailto:${email}`}
+                      className="hover:text-yellow-400"
+                    >
+                      {email}
+                    </a>
+                    {index < CONTACT_INFO.emails.length - 1 && " / "}
+                  </span>
+                ))}
               </li>
             </ul>
 
             {/* Social Media */}
             <div className="flex space-x-6 mt-2">
-              <span className="font-medium text-yellow-400">Follow Us:</span> <br />
+              <span className="font-medium text-yellow-400">Follow Us:</span>{" "}
+              <br />
               <a
-                href="https://facebook.com"
+                href={CONTACT_INFO.socialMedia.facebook}
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-yellow-400 transition-transform transform hover:scale-110"
@@ -80,7 +86,7 @@ const Footer: React.FC = () => {
                 <FaFacebookF className="text-2xl" />
               </a>
               <a
-                href="https://instagram.com/niharika_foundation?igshid=Y2I2MzMwZWM3ZA=="
+                href={CONTACT_INFO.socialMedia.instagram}
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-yellow-400 transition-transform transform hover:scale-110"
@@ -88,7 +94,7 @@ const Footer: React.FC = () => {
                 <FaInstagram className="text-2xl" />
               </a>
               <a
-                href="https://twitter.com"
+                href={CONTACT_INFO.socialMedia.twitter}
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-yellow-400 transition-transform transform hover:scale-110"

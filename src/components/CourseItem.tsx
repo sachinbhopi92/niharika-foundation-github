@@ -1,13 +1,5 @@
 import React from "react";
-
-export interface CourseData {
-  title: string;
-  description: string;
-  imageSrc: string[];
-  duration: string;
-  students: number;
-  link?: string;
-}
+import { CourseData } from "../types";
 
 export const CourseItem: React.FC<CourseData> = ({
   title,
@@ -25,16 +17,16 @@ export const CourseItem: React.FC<CourseData> = ({
         }`}
       >
         {imageSrc.map((src, index) => (
-          <img
-            key={index}
-            src={src}
-            alt={`${title} Image ${index + 1}`}
-            className={`${
-              imageSrc.length === 1
-                ? "w-full h-[250px]"
-                : "w-full h-[250px]"
-            } object-cover hover:scale-110 transition-transform duration-300 ease-in-out`}
-          />
+          <div key={index} className="relative overflow-hidden bg-gray-50">
+            <img
+              src={src}
+              alt={`${title} Image ${index + 1}`}
+              className={`${
+                imageSrc.length === 1 ? "w-full h-[250px]" : "w-full h-[250px]"
+              } object-contain hover:scale-105 transition-transform duration-300 ease-in-out`}
+              style={{ objectPosition: "center" }}
+            />
+          </div>
         ))}
       </div>
 
