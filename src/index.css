@@ -2,6 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Prevent unwanted browser widgets or extensions from interfering */
+* {
+  box-sizing: border-box;
+}
+
+/* Hide any potential unwanted navigation widgets */
+[class*="navigation-widget"],
+[id*="navigation-widget"],
+[class*="home-navigation"],
+[id*="home-navigation"],
+[class*="onehome-navigation"],
+[id*="onehome-navigation"],
+[data-widget*="navigation"],
+[data-widget*="home"],
+.translate-widget,
+.translation-widget,
+.goog-te-banner-frame,
+.goog-te-menu-frame,
+.skiptranslate,
+/* Target common browser extension patterns */
+[class*="extension-"],
+[id*="extension-"],
+[class*="chrome-"],
+[id*="chrome-"],
+[class*="browser-"],
+[id*="browser-"],
+/* Target any suspicious overlay elements */
+div[style*="position: fixed"][style*="z-index"],
+div[style*="position: absolute"][style*="top: 0"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
 html,
 body {
   height: 100%;

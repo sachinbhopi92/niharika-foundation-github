@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Courses from "./pages/Courses";
 import Programs from "./pages/Programs";
+import Celebrations from "./pages/Celebrations";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import AwardsRecognition from "./pages/AwardsRecognition";
@@ -21,6 +22,7 @@ const PageWrapper: React.FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/programs" element={<Programs />} />
+          <Route path="/celebrations" element={<Celebrations />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/awards" element={<AwardsRecognition />} />
           <Route path="/placement" element={<Achievements />} />

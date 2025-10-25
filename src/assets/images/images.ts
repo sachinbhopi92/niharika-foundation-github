@@ -69,18 +69,28 @@ import rajbhavanSatkar6 from './awards and recognition/award6.jpeg';
 import adarshShikshak1 from './awards and recognition/adarsh.jpeg';
 import adarshShikshak2 from './awards and recognition/adarsh1.jpeg'
 import adarshShikshak3 from './awards and recognition/adarsh2.jpeg';
+import adarshShikshak2025 from './awards and recognition/adarsh-shikshak2.jpg';
 import award7 from './awards and recognition/award7.jpg';
 import award8 from './awards and recognition/award8.jpg';
 
+// celebrations images
+import dasaraCelebration1 from './celebrations/dasara celebrations/dasara celebrations.jpg';
+import dasaraCelebration2 from './celebrations/dasara celebrations/dasara celebrations2.jpg';
+import dasaraCelebration3 from './celebrations/dasara celebrations/dasara celebrations3.jpg';
+import dasaraCelebration4 from './celebrations/dasara celebrations/dasara celebrations4.jpg';
+import dasaraCelebration5 from './celebrations/dasara celebrations/dasara celebrations5.jpg';
+import dasaraCelebration6 from './celebrations/dasara celebrations/dasara celebrations6.jpg';
+import birthdayCelebration1 from './birthday/birthday1.jpeg';
+
 // teachers images
 
-import ganeshSir from './teachers/ganesh-sir.jpeg';
+import ganeshSir from './teachers/ganesh-sir.jpg';
 import avinashSir from './teachers/avinash-sir.jpeg';
 import maheshSir from './teachers/mahesh-sir.jpeg';
 import santoshSir from './teachers/santosh-sir.jpeg';
 import ganeshriMam from './teachers/Ganeshri-mam.jpeg';
 import shraddhaMam from './teachers/shrarddha-mam.jpeg';
-import ranjanaMam from './teachers/ranjana-mam.jpeg';
+import ranjanaMam from './teachers/ranjana-mam.jpg';
 import sanikaMam from './teachers/sanika-mam.jpeg';
 import balaramSir from './teachers/balaram-sir.jpeg';
 import rushiSir from './teachers/rushi-sir.jpeg';
@@ -112,8 +122,18 @@ import logo18 from './company logo/logo18.png';
 import logo19 from './company logo/logo19.png';
 import logo20 from './company logo/logo20.png';
 
+// emergency-training-images
+import emergencyTraining1 from './safety-emergency-training/emergency-training-1.jpeg.jpg';
+import emergencyTraining2 from './safety-emergency-training/emergency-training-2.jpeg.jpg';
+import emergencyTraining3 from './safety-emergency-training/emergency-training-3.jpeg.jpg';
+
+// health-training-images
+import healthTraining1 from './health-training-program/health-training-1.jpeg.jpg';
+import healthTraining2 from './health-training-program/health-training-2.jpeg.jpg';
+
 
 import student1 from './placed_student/daulat.jpg'
+import student2 from './placed_student/placement2.jpg'
 
 export { logoImage, bgImage, collegeImage, electricianImage, acMechanicalImage, refrigeratorImage, fitterImage, welderImage, twoWheelerImage, plumberImage, beauticianImage, bridalImage, sikkimUniversityImage1,
     sikkimUniversityImage2, fashionDesignImage, foodProcessingImage, aariWorkImage, jewelleryMakingImage, computerCoursesImage,
@@ -121,9 +141,10 @@ export { logoImage, bgImage, collegeImage, electricianImage, acMechanicalImage, 
     rplTraining1, rplTraining2, rplTraining3, skillIndia1, skillIndia2, skillIndia3,
     industrialVisit1, industrialVisit2, industrialVisit3, fitIndia1, fitIndia2, fitIndia3, urjaMarg1, urjaMarg2, urjaMarg3,
     hairCutting1, hairCutting2, hairCutting3, computerLab1, computerLab2, computerLab3, beautyFacial1, beautyFacial2, beautyFacial3,workshop1, workshop2, workshop3,workshop4,
-    rajbhavanSatkar1, rajbhavanSatkar2, rajbhavanSatkar3, rajbhavanSatkar4, rajbhavanSatkar5, rajbhavanSatkar6, adarshShikshak1, adarshShikshak2, adarshShikshak3, award7, award8,
+    rajbhavanSatkar1, rajbhavanSatkar2, rajbhavanSatkar3, rajbhavanSatkar4, rajbhavanSatkar5, rajbhavanSatkar6, adarshShikshak1, adarshShikshak2, adarshShikshak3, adarshShikshak2025, award7, award8,
     ganeshSir, avinashSir, maheshSir, santoshSir, ganeshriMam, shraddhaMam, ranjanaMam, sanikaMam, balaramSir, rushiSir, sanjaySir, samirSir, sachinSir,
     logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo12, logo13, logo14, logo15, logo16, logo17, logo18, logo19, logo20,
-    student1
+    student1, student2, emergencyTraining1, emergencyTraining2, emergencyTraining3, healthTraining1, healthTraining2,
+    dasaraCelebration1, dasaraCelebration2, dasaraCelebration3, dasaraCelebration4, dasaraCelebration5, dasaraCelebration6, birthdayCelebration1
 
  };
