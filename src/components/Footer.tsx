@@ -117,12 +117,14 @@ const Footer: React.FC = () => {
             Niharika Foundation
           </Link>
           &nbsp; | Design By:{" "}
-          <Link
-            to="/"
+          <a
+            href="https://sachinbhopi.careerttiniharikafoundation.com/"
             className="text-yellow-400 hover:text-white transition duration-300"
+            target="_blank"
+            rel="noreferrer"
           >
-            Saharsha Tech Pvt. Ltd.
-          </Link>
+            Sachin Bhopi
+          </a>
         </p>
       </div>
     </footer>
